@@ -1,56 +1,72 @@
+<div class="bodyind">
+  <div class="bodylog">
+    <div class="logeo">
+      <div class="container my-5">
+        <div class="col-12">
+          <div class="displayTable">
+            <div class="displayTableCell">
+              <div class="authBlock">
+                <h1 class="h1">¡Resgistrate!</h1>
+                <div class="form-group">
+                  <p class="texto1">Usuario</p>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    #userEmail
+                    required />
+                </div>
+                <div class="form-group">
+                  <br />
+                  <br />
+                  <br />
+                  <p class="texto">Contraseña</p>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                    #userPwd
+                    required />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-primary"
+                    value="Registrarse"
+                    (click)="
+                      authService.SignUp(userEmail.value, userPwd.value)
+                    " />
+                </div>
+                <div style="margin-top: 130px" class="form-group">
+                  <span class="or"><span class="or">Or</span></span>
+                </div>
+                <!-- Continue with Google -->
+                <div style="margin-top: -25px" class="form-group">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    (click)="authService.GoogleAuth()">
+                    Continue with Google
+                  </button>
+                </div>
+              </div>
+              <div class="redirectToLogin">
+                <span class="a"
+                  >Already have an account?<span class="redirect" routerLink=""
+                    >Log In</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="container my-5" >
-<div class="col-12">
-  <div class="displayTable">
-    <div class="displayTableCell">
-      <div class="authBlock">
-        <h1 class="h1">¡Resgistrate!</h1>
-        <div class="form-group">
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Email Address"
-            #userEmail
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Password"
-            #userPwd
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input
-            type="button"
-            class="btn btn-primary"
-            value="Registrarse"
-            (click)="authService.SignUp(userEmail.value, userPwd.value)"
-          />
-        </div>
-        <div class="form-group">
-          <span class="or"><span class="or">Or</span></span>
-        </div>
-        <!-- Continue with Google -->
-        <div class="form-group">
-          <button type="button" class="btn btn-success" (click)="authService.GoogleAuth()">
-            Continue with Google
-          </button>
-        </div>
-      </div>
-      <div class="redirectToLogin">
-        <span class="a">Already have an account?<span class="redirect" routerLink="">Log In</span></span>
-      </div>
+      <div class="d-grid gap-2 col-3 mx-auto"></div>
+    </div>
+    <div class="logimg">
+      <img src="Group_213.png" />
     </div>
   </div>
-</div>
-</div>
-
-
-
-<div class="d-grid gap-2 col-3 mx-auto">
-
+  <p style="padding-bottom: 229px"></p>
 </div>

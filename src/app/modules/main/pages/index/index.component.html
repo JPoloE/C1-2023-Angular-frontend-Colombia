@@ -1,34 +1,71 @@
-
-  <h1 style="text-align: center; margin-bottom: 15%; margin-top: 10%;">¡Bienvenido a tu agenda personal!</h1>
-
-  <div class="displayTable">
-    <div class="displayTableCell">
-      <div class="authBlock">
-        <h2 class="h2">¡Inicia sesión!</h2>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Username" #userName required>
+<div class="bodyind">
+  <div class="bodylog">
+    <div class="logeo">
+      <h1 style="text-align: center">¡Bienvenido a tu agenda personal!</h1>
+      <div class="displayTable">
+        <div class="displayTableCell">
+          <div class="authBlock">
+            <h2 class="h2" style="font-family: 'Poppins', sans-serif">
+              ¡Inicia sesión!
+            </h2>
+            <div class="form-group">
+              <p class="texto1">Usuario</p>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                #userName
+                required />
+            </div>
+            <div class="form-group">
+              <p class="texto">Contraseña</p>
+              <input
+                style="background: none"
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                #userPassword
+                required />
+            </div>
+            <!-- Calling SignIn Api from AuthService -->
+            <div class="form-group d-grid gap-2 col-2 mx-auto">
+              <input
+                style="margin-top: 12%"
+                type="button"
+                class="btn btn-primary"
+                value="Log in"
+                (click)="
+                  authService.SignIn(userName.value, userPassword.value)
+                " />
+            </div>
+            <div class="form-group">
+              <span class="or"><span class="orInner">Or</span></span>
+            </div>
+            <!-- Calling GoogleAuth Api from AuthService -->
+            <div class="form-group d-grid gap-2 col-2 mx-auto">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                (click)="authService.GoogleAuth()">
+                Log in with Google
+              </button>
+            </div>
+          </div>
+          <div class="redirectToLogin">
+            <span
+              >Don't have an account?<span
+                class="redirect"
+                routerLink="/sign-up">
+                Sign Up</span
+              ></span
+            >
+          </div>
         </div>
-        <div class="form-group">
-          <input type="password" class="form-control" placeholder="Password" #userPassword required>
-        </div>
-        <!-- Calling SignIn Api from AuthService -->
-        <div class="form-group d-grid gap-2 col-2 mx-auto">
-          <input style="margin-top: 10%;" type="button" class="btn btn-primary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
-        </div>
-        <div class="form-group">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-        <!-- Calling GoogleAuth Api from AuthService -->
-        <div class="form-group d-grid gap-2 col-2 mx-auto">
-          <button type="button" class="btn btn-secondary" (click)="authService.GoogleAuth()">
-            Log in with Google
-          </button>
-        </div>
-      </div>
-      <div class="redirectToLogin">
-        <span>Don't have an account?<span class="redirect" routerLink="/sign-up"> Sign Up</span></span>
       </div>
     </div>
+    <div class="logimg">
+      <img src="Group_212.png" />
+    </div>
   </div>
-
-
+  <p style="padding-bottom: 229px"></p>
+</div>

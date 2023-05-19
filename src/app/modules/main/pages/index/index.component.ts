@@ -8,10 +8,8 @@ import { AuthService } from '../../services/auth.service';
 })
 export class IndexComponent {
   constructor(public readonly authService: AuthService) {}
-
-  auth(): void{
+  imagen = 'Group_212.png';
+  auth(): void {
     this.authService.GoogleAuth();
   }
-
-
 }

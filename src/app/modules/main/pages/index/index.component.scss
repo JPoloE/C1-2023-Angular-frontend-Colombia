@@ -1,8 +1,65 @@
 /*For font-awesome icons in Placeholder*/
+h1{padding-bottom: 200px; margin-top: -100px;
+  font-family: 'Poppins', sans-serif;
+  color: #263AB5;
+
+}
+.bodyind{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5A81FA !important;
+  display: grid;
+  place-items:center;
+}
+.bodylog{
+  display:inline-table;
+  margin: auto;
+  margin-top: 30px;
+  height: 800px;
+  width:1540px ;
+  background-color: white;
+  border-radius: 30px;
+
+}
+.logeo{
+  float: left;
+  margin-top: 290px;
+  margin-left:80px;
+  width: 600px;
+}
+.logimg{
+  background: none;
+  float: right;
+}
 .placeicon {
 	font-family: fontawesome;
 }
-
+.redirect:hover{
+  cursor:pointer;
+}
+.redirect{
+ color: blue;
+}
+//**imput**//
+.texto{
+  padding: 10px;
+  margin-left: -300px;
+}
+.texto1{
+  padding: 10px;
+  margin-left: -320px;
+}
+.form-control{
+  width: 400px;
+  height: 50px;
+  margin-left: -100px;
+}
+.btn-secondary{
+  margin-left: -40px;
+  width: 180px;
+  margin-bottom: 10px;
+}
 .custom-control-label::before {
 	background-color: #dee2e6;
 	border: #dee2e6;
