@@ -8,6 +8,6 @@ import { AuthService } from '../../services/auth.service';
 })
 export class RegistrarseComponent implements OnInit {
   constructor(public authService: AuthService) {}
-  imagen = 'Group_213.png';
+  imagenreg = 'Group_213.png';
   ngOnInit(): void {}
 }
