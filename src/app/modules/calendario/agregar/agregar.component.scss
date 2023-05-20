@@ -1,0 +1,91 @@
+.container{
+  background-color: white
+
+}
+h1{
+  margin-left: -80px;
+}
+.row{
+
+  font-size:25px;
+  display:table;
+  align-items: center;
+  margin-left: -130px;
+  padding-top: 100px !important;
+  padding: 150px;
+  height: 700px;
+  width:1540px ;
+  border-radius: 30px;
+  border-width: 50px;
+  background-color: #FAFAFA;
+  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#title{
+  width: 600px;
+  height: 50px;
+}
+
+#responsible{
+  width: 600px;
+  height: 50px;
+}
+#lablelresp{
+  float: right;
+  margin-left: -680px;
+  margin-top: -455px;
+
+}
+#labeld{
+  float: right;
+  margin-left: -680px;
+  margin-top: -328px;
+}
+#labelm{
+  float: right;
+  margin-left: -680px;
+  margin-top: -233px;
+}
+#labela{
+  float: right;
+  margin-left: -680px;
+  margin-top: -130px;
+}
+#description{
+height: 250px;
+}
+p{
+  float: left;
+  position:absolute;
+  border-radius: 5px;
+  margin-top: -50px;
+}
+.form-label{}
+input{
+  border-color: #6A6E83;
+  width: 600px;
+  height: 50px;
+  margin-bottom: 50px;
+
+}
+#btnguardar{
+  margin-top: -30px;
+  background-color: #37FD6C;
+  color: black;
+  border-width: 0;
+  width: 600px;
+  float: right;
+  height: 50px;
+}
+#btndes{
+  margin-top: -30px;
+  margin-left: -50px;
+  margin-right: 17px;
+  background-color: gray;
+  color: black;
+  border-width: 0;
+  width: 600px;
+  float: right;
+  height: 50px;
+}

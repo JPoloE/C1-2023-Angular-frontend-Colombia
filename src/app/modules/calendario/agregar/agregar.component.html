@@ -1,10 +1,10 @@
-<div class="container my-5">
-  <h1 style="text-align: center; margin-top: 5%">
+<div class="container">
+  <h1 style="text-align: left; font-size: 40px; color: #263ab5; margin-top: 2%">
     Agrega una nueva tarea a tu agenda
   </h1>
 
   <div class="row">
-    <div class="col-6" style="align-items: center">
+    <div>
       <form [formGroup]="formularioAgg" (ngSubmit)="addItemRequired()">
         <div class="mb-3">
           <label for="title" class="form-label">Titulo</label>
@@ -40,7 +40,7 @@
             Este campo no puede ir vacio
           </p>
         </div>
-        <div class="mb-3">
+        <div id="lablelresp" class="mb-3">
           <label for="responsible" class="form-label">Responsible</label>
           <input
             required
@@ -57,7 +57,7 @@
             Este campo no puede ir vacio
           </p>
         </div>
-        <div class="mb-3">
+        <div id="labeld" class="mb-3">
           <label for="day" class="form-label">Day</label>
           <input
             required
@@ -91,7 +91,7 @@
             Ingresa un dia valido
           </p>
         </div>
-        <div class="mb-3">
+        <div id="labelm" class="mb-3">
           <label for="monthly" class="form-label">Monthly</label>
           <input
             required
@@ -124,7 +124,7 @@
             Solo se pueden registrar tareas para Febrero
           </p>
         </div>
-        <div class="mb-3">
+        <div id="labela" class="mb-3">
           <label for="year" class="form-label">Year</label>
           <input
             required
@@ -157,7 +157,12 @@
             Solo se pueden registrar tareas para 2023
           </p>
         </div>
-        <button type="submit" class="btn btn-outline-success">Guardar</button>
+        <button type="submit" id="btnguardar" class="btn btn-outline-success">
+          Guardar
+        </button>
+        <button type="" id="btndes" class="btn btn-outline-success">
+          descartar
+        </button>
       </form>
     </div>
   </div>
