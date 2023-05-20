@@ -27,18 +27,18 @@ export class AgregarComponent {
       'estate':new FormControl(1),
       'dia': new FormControl(0,[
         Validators.min(1),
-        Validators.max(28),
+        Validators.max(31),
         Validators.required
       ]),
       'mes': new FormControl(2,[
-        Validators.min(2),
+        Validators.min(1),
         Validators.required,
-        Validators.max(2)
+        Validators.max(12)
         ]),
       'anio': new FormControl(2023,[
         Validators.min(2023),
         Validators.required,
-        Validators.max(2023)
+        Validators.max(2050)
         ]),
       'idUser': new FormControl(localStorage.getItem('uid'))
     })
